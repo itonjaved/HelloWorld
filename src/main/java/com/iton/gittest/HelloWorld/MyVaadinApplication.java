@@ -37,7 +37,15 @@ public class MyVaadinApplication extends Application
         Button button = new Button("Click Me");
         button.addListener(new Button.ClickListener() {
             public void buttonClick(ClickEvent event) {
-                window.addComponent(new Label("Thank you for clicking"));
+            	Window win = new Window("PopUp Form");
+            	win.setModal(true);
+            	win.setScrollable(false);
+            	win.setDraggable(false);
+            	win.setResizable(false);
+            	win.center();
+            	win.setWidth("350px");
+            	win.addComponent(new Form());
+            	window.addWindow(win);
             }
         });
         window.addComponent(button);
