@@ -80,12 +80,12 @@ public class Form extends CustomComponent {
 		mainLayout = new AbsoluteLayout();
 		mainLayout.setImmediate(false);
 		mainLayout.setWidth("300px");
-		mainLayout.setHeight("400px");
+		mainLayout.setHeight("300px");
 		mainLayout.setMargin(false);
 		
 		// top-level component properties
 		setWidth("300px");
-		setHeight("400px");
+		setHeight("300px");
 		
 		// label_1
 		label_1 = new Label();
